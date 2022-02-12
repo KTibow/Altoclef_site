@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Download Altoclef, the Minecraft Bot</title>
+        <style>
+            body {
+                background: #222 url(assets/background.png) no-repeat center center fixed;
+                background-size: cover;
+                color: white;
+                font-family: system-ui, sans-serif;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                body {
+                    background-image: url(assets/background-dark.png);
+                }
+            }
+
+            .card {
+                background: #0004;
+                padding: 1rem;
+                backdrop-filter: blur(25px);
+                border-radius: 5px;
+            }
+
+            @media (min-width: 600px) {
+                body {
+                    margin: 4rem;
+                }
+
+                body * {
+                    display: inline-block;
+                    float: left;
+                    clear: both;
+                }
+            }
+
+            @media (max-width: 600px) {
+                body {
+                    text-align: center;
+                }
+            }
+
+            h1 {
+                font-size: 4rem;
+            }
+
+            details,
+            details > div {
+                margin: 1rem 0;
+            }
+
+            summary {
+                cursor: pointer;
+                display: revert;
+            }
+
+            a {
+                color: #fff;
+                float: unset;
+            }
+            .row {
+                display: flex;
+                gap: 2rem;
+
+                float: unset;
+                max-width: 50vw;
+                margin: 0 auto;
+
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1 class="card">Altoclef</h1>
+        <p class="card">Altoclef was the first ever bot to beat Minecraft.</p>
+        <p class="card">
+            Using Baritone's pathfinding and a task tree system, Altoclef can automatically gather items and perform tasks.
+        </p>
+        <details>
+            <summary class="card">Open download steps</summary>
+            <div class="card">
+                <h2>Get Fabric</h2>
+                <p>Fabric is a platform that lets you load custom mods into Minecraft easily.</p>
+                <p>
+                    <a href="https://fabricmc.net/use/installer/">Fabric Installation</a>
+                </p>
+            </div>
+            <div class="card">
+                <h2>Download Altoclef</h2>
+                <p>⚠️ If you previously used Baritone, make sure to delete those configurations.</p>
+                <p>To use Altoclef, you need to download it as a mod.</p>
+                <p>
+                    <a href="https://nightly.link/gaucho-matrero/altoclef/workflows/gradle/main/Artifacts.zip">
+                        Download Altoclef Builds
+                    </a>
+                </p>
+                <p>
+                    Extract the "altoclef-0.4.0.jar" file and place it in your
+                    <a href="https://gaming.stackexchange.com/questions/151317/where-is-the-mod-folder">mods folder</a>
+                    .
+                </p>
+            </div>
+        </details>
+        <div class="row">
+            <div class="card">
+                <h2>Chat</h2>
+                <p><a href="https://discord.gg/fUUEHeNmXb">Join the Discord</a></p>
+            </div>
+            <div class="card">
+                <h2>Run</h2>
+                <p><a href="https://github.com/gaucho-matrero/altoclef/blob/main/usage.md">Read the usage guide</a></p>
+            </div>
+            <div class="card">
+                <h2>Dev</h2>
+                <p>
+                    <a href="https://github.com/gaucho-matrero/altoclef/wiki/1:-Documentation:-Big-Picture">
+                        Read about the architecture
+                    </a>
+                </p>
+                <p>
+                    <a href="https://github.com/gaucho-matrero/altoclef/wiki/2:-Documentation:-API-Things-to-know-(WIP)">
+                        Read about how to use the API
+                    </a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
